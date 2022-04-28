@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    src: url(./fonts/Livvic-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url(./fonts/Livvic-Bold.ttf);
+}
+
+
+.header {
+    padding-top: 140px !important;
+    padding-bottom: 140px;
+    background: #004047;
+}
+.header-img {
+    margin-right: 10%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header-img-second {
+    bottom: 0;
+    right: 0;
+}
+.main-title {
+    margin-top: 140px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+.box {
+    margin-bottom: 140px;
+    margin-right: 30px;
+    height: 250px;
+    background: #012F34;
+}
+.box:nth-child(-3n+6) {
+    margin: unset;
+}
+.title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+}
+.text {
+    font-family: 'Livvic';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.card-item {
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: #002529;
+}
+.radius:hover ~ .card-item {
+    display: block;
+    top: 0;
+    transition: all 0.8s step-end;
+}
+.radius:hover {
+    transition: all 0.2s ease-in-out;
+    transform: rotate(-45deg);
+    background: #79C8C7;
+}
+.radius {
+    width: 56px;
+    height: 56px;
+    background: #F67E7E;
+    z-index: 1;
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+    right: 40%;
+    left: 40%;
+    bottom: -25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card-item-media {
+    padding: 8px;
+    color: white;
+    display: inline-block;
+}
+.card-item-media:active {
+    background: #F67E7E;
+}
